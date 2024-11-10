@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "composite": true,
+      "module": "CommonJS",   // Set module system if needed for Node
+      "target": "ESNext"
+    },
+    "include": ["./src/"] // Adjust to your Node files directory if needed
+  }
+  

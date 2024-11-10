@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",                        // Optimized for the latest JavaScript features.
+      "useDefineForClassFields": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",                // Needed for Vite's modern dependency resolution.
+      "strict": true,                            // Enables strict type-checking options.
+      "jsx": "preserve",                         // Keeps JSX as-is; Vite handles it with a plugin.
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],  // Specifies the library files.
+      "skipLibCheck": true,                      // Improves build speed by skipping library type checks.
+      "isolatedModules": true                    // Needed for Vite's bundling process.
+    },
+    "include": ["src"],                          // Ensures only files in the "src" directory are compiled.
+    "references": [{ "path": "./tsconfig.node.json" }], // Optional: adds configuration for Node scripts.
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+  
